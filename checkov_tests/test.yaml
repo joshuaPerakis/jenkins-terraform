@@ -6,6 +6,6 @@ definition:
     cond_type: attribute
     attribute: bucket
     operator: equals
-    value: "abc"
+    value: "terraform-testing123-321"
     resource_types:
       - aws_s3_bucket

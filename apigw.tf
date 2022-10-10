@@ -1,6 +1,6 @@
-provider "aws" {
-  region = "us-east-1"
-}
+# provider "aws" {
+#   region = "us-east-1"
+# }
 
 resource "aws_elasticache_cluster" "cluster-redis" {
   cluster_id           = "cluster-redis"

@@ -3,14 +3,14 @@ metadata:
   name: "Test"
   category: "CONVENTION"
 definition:
-  and:
-    - cond_type: attribute
-      attribute: bucket
-      operator: equals
-      value: "terraform-testing123-321"
-      resource_types:
-        - aws_s3_bucket
-    - cond_type: attribute
+#   and:
+#     - cond_type: attribute
+#       attribute: bucket
+#       operator: equals
+#       value: "terraform-testing123-321"
+#       resource_types:
+#         - aws_s3_bucket
+      cond_type: attribute
       attribute: protocol_type
       operator: equals
       value: "HTTP"

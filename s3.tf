@@ -7,5 +7,5 @@ resource "aws_s3_bucket" "terraform-testing123-321" {
 }
 
 output "bucket-name" {
-  value =  resource.terraform-testing123-321
+  value =  resource.aws_s3_bucket.terraform-testing123-321
 }

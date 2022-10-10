@@ -8,6 +8,7 @@ resource "aws_elasticache_cluster" "cluster-redis" {
   node_type            = "cache.m4.large"
   num_cache_nodes      = 1
   engine_version       = "3.2.10"
+  at_rest_encryption_enabled = true
 }
 
 resource "aws_elasticache_cluster" "cluster-memcache" {
@@ -15,4 +16,5 @@ resource "aws_elasticache_cluster" "cluster-memcache" {
   engine               = "memcached"
   node_type            = "cache.m4.large"
   num_cache_nodes      = 1
+  transit_encryption_enabled = true
 }

@@ -6,7 +6,7 @@ scope:
   provider: aws
 definition:
   cond_type: attribute
-  attribute: "tags_all.fail"
+  attribute: "tags_all.test"
   operator: exists
   resource_types:
     - aws_s3_bucket

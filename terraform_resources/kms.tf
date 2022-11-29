@@ -4,6 +4,8 @@ resource "aws_kms_key" "a" {
     enable_key_rotation     = false
 }
 
+# this exception only works when checkov scans the .tf file
+# this exception will not work when scanning the tfplan.json file
 resource "aws_kms_key" "b" {
     description             = "non rotated key with exception"
     deletion_window_in_days = 7

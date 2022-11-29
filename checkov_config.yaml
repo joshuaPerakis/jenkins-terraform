@@ -7,8 +7,8 @@ framework:
   - all
 summary-position: top
 skip-check:
-  - CKV_AWS_18
+  - LOW # skip based on severity
 check:
-  - CUS_AWS_1
-  - CKV_AWS_7
-  - CKV_AWS_18
+  - CUS_AWS_1   # tagging
+  - CKV_AWS_7   # kms rotation (medium severity)
+  - CKV_AWS_18  # s3 access logging (low severity)

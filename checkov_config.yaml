@@ -6,6 +6,8 @@ file:
 framework:
   - all
 summary-position: top
+soft-fail-on:
+  - CKV_AWS_18  # s3 access logging
 check:
   - CUS_AWS_1   # tagging
   - CKV_AWS_7   # kms rotation

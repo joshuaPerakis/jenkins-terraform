@@ -6,7 +6,7 @@ file:
 framework:
   - all
 summary-position: top
-skip:
+skip-check:
   - CKV_AWS_18  # s3 access logging
 check:
   - CUS_AWS_1   # tagging

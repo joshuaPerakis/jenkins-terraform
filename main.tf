@@ -12,3 +12,7 @@ terraform {
         }
     }
 }
+
+module "demo_test" {
+    source = "./terraform_resources"
+}

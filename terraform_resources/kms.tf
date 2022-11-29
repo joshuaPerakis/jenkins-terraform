@@ -7,8 +7,7 @@ resource "aws_kms_key" "a" {
 resource "aws_kms_key" "b" {
     description             = "non rotated key with exception"
     deletion_window_in_days = 7
-    
-    #checkov:skip=CKV_AWS_7:Test skipping kms rotation for this specific key
+    #checkov:skip=CKV_AWS_7
     enable_key_rotation     = false
 }
 

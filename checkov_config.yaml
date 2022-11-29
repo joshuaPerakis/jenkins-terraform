@@ -8,5 +8,5 @@ framework:
 summary-position: top
 check:
   - CUS_AWS_1   # tagging
-  - CKV_AWS_7   # kms rotation (medium severity)
-  - CKV_AWS_18  # s3 access logging (low severity)
+  - CKV_AWS_7   # kms rotation
+  - CKV_AWS_18  # s3 access logging

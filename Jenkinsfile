@@ -31,7 +31,7 @@ pipeline {
                 sh 'git clone https://github.com/joshuaPerakis/jenkins-terraform.git --branch configuration'
                 sh 'pwd'
                 sh 'ls -a'
-                sh 'ls -a jenkins-config'
+                sh 'ls -a jenkins-terraform'
             }
         }
         
@@ -50,7 +50,7 @@ pipeline {
         
         stage('Checkov Tests') {
             steps {
-                sh 'checkov --config-file jenkins-config/checkov_config.yaml'
+                sh 'checkov --config-file jenkins-terraform/checkov_config.yaml'
             }
         }
         

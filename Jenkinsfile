@@ -9,10 +9,12 @@ pipeline {
     stages {
         
         stage('Clean up') {
-            sh 'pwd'
-            sh 'ls -a'
-            sh 'rm -rf ./*'
-            sh 'ls -a'
+            steps {
+                sh 'pwd'
+                sh 'ls -a'
+                sh 'rm -rf ./*'
+                sh 'ls -a'
+            }
         }
         
         stage('Checkout SCM') {

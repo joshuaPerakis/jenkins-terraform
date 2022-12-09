@@ -8,16 +8,14 @@ pipeline {
 
     stages {
         
-//         stage('Git Checkout') {
-//             steps {
-//                 git url: 'https://github.com/joshuaPerakis/jenkins-terraform.git', branch: 'main'
-// //                 sh 'pip3 uninstall virtualenv -y'
-// //                 sh 'pip3 list'
-// //                 sh 'pip3 install virtualenv'
-// //                 sh 'pip3 list'
-// //                 sh '/var/lib/jenkins/.local/bin/virtualenv --version'
-//             }
-//         }
+        stage('Checkout Configuration') {
+            steps {
+                sh 'pwd'
+                sh 'ls'
+                git url: 'https://github.com/joshuaPerakis/jenkins-terraform.git', branch: 'configuration'
+                sh 'ls'
+            }
+        }
         
         stage('Terraform Init') {
             steps {

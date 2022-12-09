@@ -12,7 +12,6 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -a'
-                sh 'ls -a jenkins-terraform'
                 //git url: 'https://github.com/joshuaPerakis/jenkins-terraform.git', branch: 'configuration'
                 sh 'git clone https://github.com/joshuaPerakis/jenkins-terraform.git --branch configuration .'
                 sh 'pwd'

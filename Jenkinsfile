@@ -50,7 +50,7 @@ pipeline {
         
         stage('Checkov Tests') {
             steps {
-                sh 'checkov --config-file jenkins-terraform/checkov_config.yaml --skip-check CKV_AWS_7'
+                sh 'checkov --config-file jenkins-terraform/checkov_config.yaml --soft-fail-on CKV_AWS_7'
             }
         }
         

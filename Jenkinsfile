@@ -18,7 +18,9 @@ pipeline {
         }
         
         stage('Checkout SCM') {
-            checkout scm;   
+            steps {
+                checkout scm;
+            }
         }
         
         stage('Checkout Central Checkov Configuration File') {
